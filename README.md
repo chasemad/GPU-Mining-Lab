@@ -2,7 +2,7 @@
 
 **HiveOS · Custom Hardware Builds · Systems Monitoring · Troubleshooting**
 
-An independent cryptocurrency-mining hardware project I built and managed myself. What started as one custom GPU rig grew into a multi-system setup. Along the way, I configured hardware and operating systems, diagnosed unpredictable GPU dropouts, maintained network connectivity, monitored performance, and adapted cooling and ventilation to a small residential space.
+An independent cryptocurrency-mining hardware project I built and managed myself. What started as one custom GPU rig grew into a multi-system setup. I configured hardware and operating systems, diagnosed unpredictable GPU dropouts, maintained network connectivity, and monitored performance.
 
 > **Historical personal project, not commercial data-center infrastructure.** The specifications and dashboard figures below are historical snapshots, not current operations. This case study is about hands-on IT troubleshooting and systems management—not investment returns or mining recommendations.
 
