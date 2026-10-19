@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="An independently built and managed multi-GPU cryptocurrency mining lab: HiveOS, PC hardware, monitoring, and troubleshooting.">
+<title>Multi-GPU Mining Lab | Hardware & HiveOS</title>
+<style>
+:root{color-scheme:dark;--bg:#0b101a;--panel:#111b2a;--line:#293647;--text:#f4f7fa;--muted:#afbece;--accent:#6bd3bd}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}.shell{max-width:1100px;margin:0 auto;padding:0 25px}
+nav{display:flex;justify-content:space-between;gap:16px;padding:20px 0;border-bottom:1px solid var(--line);align-items:center}nav b{font-size:.9rem;letter-spacing:.06em}nav div{display:flex;gap:18px;font-size:.9rem}
+.hero{padding:66px 0 34px}.eyebrow{letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-size:.74rem;font-weight:750}
+h1{font-size:clamp(2.1rem,6vw,4.15rem);line-height:1.1;letter-spacing:-.05em;margin:15px 0 20px;max-width:800px}
+h2{font-size:clamp(1.5rem,3vw,2.35rem);line-height:1.23;letter-spacing:-.03em}h3{font-size:1.08rem;margin-bottom:9px}
+p{color:var(--muted)}.lead{font-size:1.15rem;max-width:760px}.note{font-size:.88rem;color:#c1cbd7;border-left:2px solid var(--accent);padding:6px 0 6px 14px;margin:22px 0}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 0 55px}.metric{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px}.metric b{display:block;font-size:1.6rem}.metric span{color:var(--muted);font-size:.84rem}
+section{border-top:1px solid var(--line);padding:24px 0 55px}.story{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center;margin:35px 0 45px}
+.story:nth-of-type(2n){direction:rtl}.story:nth-of-type(2n)>*{direction:ltr}.story p{max-width:520px}.thumb{border:1px solid var(--line);border-radius:15px;overflow:hidden;background:var(--panel);min-height:220px}
+.thumb img{width:100%;aspect-ratio:16/10;object-fit:cover;display:block}.thumb .fallback{display:none;min-height:220px;align-items:center;justify-content:center;text-align:center;color:var(--muted);padding:20px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.gallery figure{margin:0;background:var(--panel);border:1px solid var(--line);border-radius:11px;overflow:hidden}
+.gallery img{width:100%;height:190px;object-fit:cover}.gallery figcaption{padding:10px 13px;font-size:.82rem;color:var(--muted)}.gallery figure.missing{display:none}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:13px}.card{border:1px solid var(--line);border-radius:12px;background:var(--panel);padding:18px}
+.card h3{margin:0}.card p{margin:8px 0 0;font-size:.94rem}footer{border-top:1px solid var(--line);padding:30px 0 50px;color:var(--muted);font-size:.85rem}
+@media(max-width:750px){.hero{padding-top:38px}.grid,.gallery,.cards{grid-template-columns:repeat(2,1fr)}.story{grid-template-columns:1fr;gap:12px}.story:nth-of-type(2n){direction:ltr}.gallery img{height:155px}}
+@media(max-width:460px){.grid{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:1fr}nav div{gap:10px}}
+</style>
+</head>
+<body>
+<div class="shell">
+<nav><b>GPU MINING LAB</b><div><a href="#build">The build</a><a href="#gallery">Photos</a><a href="#lessons">Lessons</a></div></nav>
+<header class="hero">
+<div class="eyebrow">Personal hardware project · Historical case study</div>
+<h1>From my first GPU rig to a 29-GPU mining setup.</h1>
+<p class="lead">A hands-on project documenting how I built, configured, monitored, and maintained multi-GPU mining systems—and learned to troubleshoot unpredictable failures and physical operating constraints.</p>
+<p class="note">Real historical equipment and monitoring records. This was a personal cryptocurrency mining project, not enterprise infrastructure or a current mining operation.</p>
+</header>
+<div class="grid">
+<div class="metric"><b>29</b><span>GPUs in snapshot</span></div>
+<div class="metric"><b>4</b><span>HiveOS workers</span></div>
+<div class="metric"><b>HiveOS</b><span>Linux-based management</span></div>
+<div class="metric"><b>8.812 kW</b><span>Reported in one snapshot</span></div>
+</div>
+<section id="build">
+<h2>Building, expanding, and maintaining the systems</h2>
+<div class="story"><div class="thumb"><img src="assets/01-components.jpg" alt="Original parts laid out before the first mining rig build" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="fallback">Original hardware component photo — upload pending</div></div><div><div class="eyebrow">01 / The beginning</div><h3>Started from individual components</h3><p>I selected components and assembled the first rig myself: GPUs, motherboards, power supplies, risers, storage, cooling hardware, networking, and an open-air frame. I learned by building and bringing each system online.</p></div></div>
+<div class="story"><div class="thumb"><img src="assets/04-expanded-rack.jpg" alt="Expanded GPU mining rack with several systems" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="fallback">Expanded mining rack photo — upload pending</div></div><div><div class="eyebrow">02 / Expansion</div><h3>One rig became a multi-system setup</h3><p>I expanded the hardware and managed the workers using HiveOS. A saved monitoring screenshot captures four workers and 29 GPUs, with the system status and power information visible at that point in time.</p></div></div>
+<div class="story"><div class="thumb"><img src="assets/05-hiveos-monitoring.jpg" alt="Historical HiveOS dashboard showing 4 workers and 29 GPUs" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="fallback">Sanitized HiveOS monitoring screenshot — upload pending</div></div><div><div class="eyebrow">03 / Operations</div><h3>Troubleshooting was the real learning</h3><p>GPUs sometimes unexpectedly disconnected or became unstable. I inspected connections and components, made adjustments, and retested. High heat in a residential space also required dedicated ventilation and ducted exhaust.</p></div></div>
+</section>
+<section id="gallery"><h2>Photo documentation</h2><p>The gallery shows actual build photographs, not generated illustrations. Monitor details and identifiable HiveOS worker names are obscured in the prepared public copies.</p>
+<div class="gallery">
+<figure><img src="assets/01-components.jpg" alt="Hardware parts before assembly" onerror="this.parentElement.classList.add('missing')"><figcaption>First components</figcaption></figure>
+<figure><img src="assets/02-first-rig.jpg" alt="First assembled rig" onerror="this.parentElement.classList.add('missing')"><figcaption>First working rig</figcaption></figure>
+<figure><img src="assets/03-setup-testing.jpg" alt="Early rig testing" onerror="this.parentElement.classList.add('missing')"><figcaption>Early testing</figcaption></figure>
+<figure><img src="assets/04-expanded-rack.jpg" alt="Expanded rig rack" onerror="this.parentElement.classList.add('missing')"><figcaption>Expanded setup</figcaption></figure>
+<figure><img src="assets/05-hiveos-monitoring.jpg" alt="HiveOS screenshot" onerror="this.parentElement.classList.add('missing')"><figcaption>HiveOS overview</figcaption></figure>
+<figure><img src="assets/06-hardware-closeup.jpg" alt="Hardware closeup" onerror="this.parentElement.classList.add('missing')"><figcaption>Inside the hardware</figcaption></figure>
+<figure><img src="assets/07-cooling-challenge.jpg" alt="Cooling equipment" onerror="this.parentElement.classList.add('missing')"><figcaption>Cooling challenges</figcaption></figure>
+</div></section>
+<section id="lessons"><h2>Skills and lessons</h2><div class="cards">
+<div class="card"><h3>Custom hardware</h3><p>Assembling and maintaining multiple GPU computing systems from individual parts.</p></div>
+<div class="card"><h3>HiveOS operations</h3><p>Monitoring GPU performance, temperatures, power, stability, and system status.</p></div>
+<div class="card"><h3>Troubleshooting</h3><p>Diagnosing intermittent dropouts and revisiting hardware configuration and connectivity.</p></div>
+<div class="card"><h3>Thermal constraints</h3><p>Learning how cooling, ventilation, and physical environments affect reliability.</p></div>
+</div></section>
+<footer>This portfolio page documents an independently completed historical personal project. <a href="https://github.com/chasemad/GPU-Mining-Lab">View the GitHub repository</a>.</footer>
+</div>
+</body></html>
