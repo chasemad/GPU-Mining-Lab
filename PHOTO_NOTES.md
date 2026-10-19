@@ -11,6 +11,8 @@ The photos for this portfolio were taken during the actual historical mining pro
 | `assets/05-hiveos-monitoring.jpg` | `IMG_0107.jpg` | Browser tabs removed, worker names obscured |
 | `assets/06-hardware-closeup.jpg` | `IMG_0051.jpg` | Metadata stripped |
 | `assets/07-cooling-challenge.jpg` | `IMG_0076.jpg` | Metadata stripped |
+| `assets/08-gpu-performance.jpg` | `IMG_4350.PNG` | Header containing rig names and lower navigation cropped; image metadata removed |
+| `assets/09-driver-thermal-diagnostics.jpg` | `IMG_0131.jpg` | Upper-right identifiers blurred; image metadata removed |
 
 The original source images were not changed. The GitHub-ready ZIP contains the public copies in the `assets/` folder.
 
@@ -22,6 +24,6 @@ The HiveOS dashboard figures are historical point-in-time observations. Dates of
 
 1. Extract `multi-gpu-mining-lab-github-ready.zip`.
 2. Open this repository's `assets/` folder and choose **Add file → Upload files**.
-3. Upload the **seven JPEG files** in the prepared `assets/` folder; keep their original prepared filenames.
+3. Upload the **nine JPEG files** in the prepared `assets/` folder; keep their original prepared filenames.
 4. Commit the upload. The standalone `index.html` website references these exact filenames.
 5. After uploading, check the public gallery and GitHub README imagery; edit or remove any photo that should not be public.
