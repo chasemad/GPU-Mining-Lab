@@ -34,7 +34,7 @@ Heat was another major challenge. Running the rigs in an apartment required dedi
 
 ## Historical photo gallery
 
-These are **real photographs from the historical project**, arranged from the first components through the expanded setup. Public copies have been prepared with monitor text and identifiable details obscured where needed. Photo filenames are referenced below and the images will render after the nine privacy-reviewed JPEG files are uploaded to `assets/`.
+These are **photographs from the project over time**, arranged from the first components through the expanded setup. Public copies have been prepared with monitor text and identifiable details obscured where needed. Photo filenames are referenced below and the images will render after the nine privacy-reviewed JPEG files are uploaded to `assets/`.
 
 ![Expanded GPU mining rack and management display](assets/04-expanded-rack.jpg)
 
